@@ -1,0 +1,50 @@
+==================================================
+Sample Run 1: Boat Capacity 50 kg, 4 item types
+Input: Medicine(10kg,100val,indivisible) Food(30kg,90val,divisible)
+       Water(40kg,60val,divisible) Blankets(15kg,20val,indivisible)
+==================================================
+Enter boat maximum weight capacity (kg): Enter number of relief item types: 
+Item 1
+Name: Weight (kg): Utility Value: Divisible (1 = Yes, e.g. food/water, 0 = No, e.g. medical kit): 
+Item 2
+Name: Weight (kg): Utility Value: Divisible (1 = Yes, e.g. food/water, 0 = No, e.g. medical kit): 
+Item 3
+Name: Weight (kg): Utility Value: Divisible (1 = Yes, e.g. food/water, 0 = No, e.g. medical kit): 
+Item 4
+Name: Weight (kg): Utility Value: Divisible (1 = Yes, e.g. food/water, 0 = No, e.g. medical kit): 
+Boat Capacity: 50.00 kg
+
+Item            Weight     Value      Ratio      Taken(kg)   
+Medicine        10.00      100.00     10.00      10.00       
+Food            30.00      90.00      3.00       30.00       
+Water           40.00      60.00      1.50       10.00       
+Blankets        15.00      20.00      1.33       0.00        
+
+Total Utility Value Loaded: 205.00
+
+==================================================
+Sample Run 2: Boat Capacity 100 kg, 5 item types
+Input: Medicine(20kg,200val,indivisible) Food(40kg,120val,divisible)
+       Water(50kg,80val,divisible) Blankets(25kg,30val,indivisible) Tents(35kg,150val,indivisible)
+==================================================
+Enter boat maximum weight capacity (kg): Enter number of relief item types: 
+Item 1
+Name: Weight (kg): Utility Value: Divisible (1 = Yes, e.g. food/water, 0 = No, e.g. medical kit): 
+Item 2
+Name: Weight (kg): Utility Value: Divisible (1 = Yes, e.g. food/water, 0 = No, e.g. medical kit): 
+Item 3
+Name: Weight (kg): Utility Value: Divisible (1 = Yes, e.g. food/water, 0 = No, e.g. medical kit): 
+Item 4
+Name: Weight (kg): Utility Value: Divisible (1 = Yes, e.g. food/water, 0 = No, e.g. medical kit): 
+Item 5
+Name: Weight (kg): Utility Value: Divisible (1 = Yes, e.g. food/water, 0 = No, e.g. medical kit): 
+Boat Capacity: 100.00 kg
+
+Item            Weight     Value      Ratio      Taken(kg)   
+Medicine        20.00      200.00     10.00      20.00       
+Tents           35.00      150.00     4.29       35.00       
+Food            40.00      120.00     3.00       40.00       
+Water           50.00      80.00      1.60       5.00        
+Blankets        25.00      30.00      1.20       0.00        
+
+Total Utility Value Loaded: 478.00

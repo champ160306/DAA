@@ -1,0 +1,110 @@
+==================================================
+Sample Run 1: Sorting by IMDB Rating (choice 1), Top 20
+==================================================
+StreamFlix Movie Recommendation Sorter
+Enter CSV filename (format: title,year,rating,watchtime): 
+Loaded 1000 movies.
+
+Sort by:
+1. IMDB Rating
+2. Release Year
+3. Watch Time Popularity
+Enter choice: 
+How many top results to display? 
+Sorted Recommendations:
+
+ID    Title                          Year     Rating   WatchTime   
+1     The Shawshank Redemption       1994     9.3      142         
+2     The Godfather                  1972     9.2      175         
+3     The Dark Knight                2008     9.0      152         
+4     The Godfather: Part II         1974     9.0      202         
+5     12 Angry Men                   1957     9.0      96          
+6     The Lord of the Rings: The Return of the King 2003     8.9      201         
+7     Pulp Fiction                   1994     8.9      154         
+8     Schindler's List               1993     8.9      195         
+9     Inception                      2010     8.8      148         
+10    Fight Club                     1999     8.8      139         
+11    The Lord of the Rings: The Fellowship of the Ring 2001     8.8      178         
+12    Forrest Gump                   1994     8.8      142         
+13    Il buono il brutto il cattivo  1966     8.8      161         
+14    The Lord of the Rings: The Two Towers 2002     8.7      179         
+15    The Matrix                     1999     8.7      136         
+16    Goodfellas                     1990     8.7      146         
+17    Star Wars: Episode V - The Empire Strikes Back 1980     8.7      124         
+18    One Flew Over the Cuckoo's Nest 1975     8.7      133         
+19    Hamilton                       2020     8.6      160         
+20    Gisaengchung                   2019     8.6      132         
+
+==================================================
+Sample Run 2: Sorting by Release Year (choice 2), Top 20
+==================================================
+StreamFlix Movie Recommendation Sorter
+Enter CSV filename (format: title,year,rating,watchtime): 
+Loaded 1000 movies.
+
+Sort by:
+1. IMDB Rating
+2. Release Year
+3. Watch Time Popularity
+Enter choice: 
+How many top results to display? 
+Sorted Recommendations:
+
+ID    Title                          Year     Rating   WatchTime   
+19    Hamilton                       2020     8.6      160         
+21    Soorarai Pottru                2020     8.6      153         
+206   Soul                           2020     8.1      100         
+465   Dil Bechara                    2020     7.9      101         
+613   The Trial of the Chicago 7     2020     7.8      129         
+614   Druk                           2020     7.8      117         
+92    Miracle in cell NO.7           2019     8.3      132         
+129   Chhichhore                     2019     8.2      143         
+136   Klaus                          2019     8.2      96          
+196   Portrait de la jeune fille en feu 2019     8.1      122         
+20    Gisaengchung                   2019     8.6      132         
+218   Ford v Ferrari                 2019     8.1      152         
+324   Togo                           2019     8.0      113         
+335   Gully Boy                      2019     8.0      154         
+464   Knives Out                     2019     7.9      130         
+34    Joker                          2019     8.5      122         
+467   Marriage Story                 2019     7.9      137         
+476   Jojo Rabbit                    2019     7.9      108         
+485   The Irishman                   2019     7.9      209         
+570   The Gentlemen                  2019     7.8      113         
+
+==================================================
+Sample Run 3: Sorting by Watch Time Popularity (choice 3), Top 20
+==================================================
+StreamFlix Movie Recommendation Sorter
+Enter CSV filename (format: title,year,rating,watchtime): 
+Loaded 1000 movies.
+
+Sort by:
+1. IMDB Rating
+2. Release Year
+3. Watch Time Popularity
+Enter choice: 
+How many top results to display? 
+Sorted Recommendations:
+
+ID    Title                          Year     Rating   WatchTime   
+141   Gangs of Wasseypur             2012     8.2      321         
+813   Hamlet                         1996     7.7      242         
+315   Gone with the Wind             1939     8.1      238         
+72    Once Upon a Time in America    1984     8.4      229         
+117   Lawrence of Arabia             1962     8.3      228         
+248   Lagaan: Once Upon a Time in India 2001     8.1      224         
+553   The Ten Commandments           1956     7.9      220         
+301   Ben-Hur                        1959     8.1      212         
+157   Swades: We the People          2004     8.2      210         
+485   The Irishman                   2019     7.9      209         
+32    Shichinin no samurai           1954     8.6      207         
+291   Andrei Rublev                  1966     8.1      205         
+178   Sholay                         1975     8.2      204         
+4     The Godfather: Part II         1974     9.0      202         
+821   Malcolm X                      1992     7.7      202         
+6     The Lord of the Rings: The Return of the King 2003     8.9      201         
+997   Giant                          1956     7.6      201         
+431   Doctor Zhivago                 1965     8.0      197         
+550   Spartacus                      1960     7.9      197         
+207   Kis Uykusu                     2014     8.1      196

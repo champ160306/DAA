@@ -1,0 +1,45 @@
+===== COST MATRIX (DISTANCE + FUEL COST) FOR 8 CITIES, TIME LIMIT 400 =====
+  --  145  158   46  155   43  178  124 
+ 145   --   59  151   82  128   46  172 
+ 158   59   --   46  137   73  104   52 
+  46  151   46   --   34  178   42   48 
+ 155   82  137   34   --  124  169   61 
+  43  128   73  178  124   --  117   38 
+ 178   46  104   42  169  117   --  170 
+ 124  172   52   48   61   38  170   -- 
+
+===== VERIFICATION: BRUTE FORCE VS LC BRANCH AND BOUND =====
+Brute Force: cost 445, tours checked 5040, time 0.111 ms
+C1 -> C4 -> C5 -> C2 -> C7 -> C3 -> C8 -> C6 -> C1
+LC Branch and Bound: cost 445, time taken 186, nodes generated 185, nodes expanded 49, time 0.122 ms
+C1 -> C6 -> C8 -> C3 -> C7 -> C2 -> C5 -> C4 -> C1
+
+===== 10 CITIES =====
+LC Branch and Bound: cost 477, time taken 199 (limit 1000)
+Nodes generated: 421, nodes expanded: 82, time 0.240 ms
+Brute force would need 362880 permutations
+C1 -> C4 -> C8 -> C6 -> C9 -> C3 -> C7 -> C10 -> C2 -> C5 -> C1
+
+===== 12 CITIES =====
+LC Branch and Bound: cost 626, time taken 267 (limit 1200)
+Nodes generated: 9205, nodes expanded: 1559, time 6.676 ms
+Brute force would need 39916800 permutations
+C1 -> C3 -> C2 -> C4 -> C11 -> C12 -> C8 -> C9 -> C7 -> C5 -> C10 -> C6 -> C1
+
+===== 14 CITIES =====
+LC Branch and Bound: cost 643, time taken 279 (limit 1400)
+Nodes generated: 5198, nodes expanded: 667, time 2.292 ms
+Brute force would need 6227020800 permutations
+C1 -> C2 -> C13 -> C11 -> C5 -> C6 -> C4 -> C8 -> C7 -> C12 -> C10 -> C14 -> C3 -> C9 -> C1
+
+===== 16 CITIES =====
+LC Branch and Bound: cost 523, time taken 246 (limit 1600)
+Nodes generated: 21001, nodes expanded: 2516, time 17.627 ms
+Brute force would need 1307674368000 permutations
+C1 -> C13 -> C8 -> C3 -> C12 -> C16 -> C15 -> C14 -> C9 -> C10 -> C5 -> C2 -> C4 -> C6 -> C11 -> C7 -> C1
+
+===== 20 CITIES =====
+LC Branch and Bound: cost 566, time taken 282 (limit 2000)
+Nodes generated: 185333, nodes expanded: 17181, time 319.398 ms
+Brute force would need 121645100408832000 permutations
+C1 -> C2 -> C4 -> C8 -> C3 -> C5 -> C13 -> C7 -> C19 -> C16 -> C20 -> C9 -> C14 -> C12 -> C17 -> C15 -> C10 -> C11 -> C6 -> C18 -> C1

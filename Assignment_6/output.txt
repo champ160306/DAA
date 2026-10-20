@@ -1,0 +1,102 @@
+===== ITEMS (TRUCK CAPACITY 100 KG) =====
+ 1. Medicine Kit       weight  12 utility  90 [perishable]
+ 2. Rice Bags          weight  30 utility  60 
+ 3. Drinking Water     weight  25 utility  80 
+ 4. Blankets           weight  18 utility  45 
+ 5. Baby Food          weight  10 utility  55 [perishable]
+ 6. Insulin            weight   6 utility  70 [perishable]
+ 7. Tents              weight  35 utility  65 
+ 8. Canned Food        weight  22 utility  50 
+ 9. First Aid Supplies weight  14 utility  85 
+10. Fresh Vegetables   weight  20 utility  40 [perishable]
+11. Torches            weight   8 utility  20 
+12. Antibiotics        weight   7 utility  75 [perishable]
+
+===== 0/1 KNAPSACK: NO PRIORITY =====
+Brute Force optimal utility: 520
+Dynamic Programming optimal utility: 520
+  Medicine Kit       weight  12 utility  90 [perishable]
+  Drinking Water     weight  25 utility  80 
+  Blankets           weight  18 utility  45 
+  Baby Food          weight  10 utility  55 [perishable]
+  Insulin            weight   6 utility  70 [perishable]
+  First Aid Supplies weight  14 utility  85 
+  Torches            weight   8 utility  20 
+  Antibiotics        weight   7 utility  75 [perishable]
+  Total weight: 100, Total weighted utility: 520, Raw utility: 520
+Greedy (value/weight ratio) utility: 520
+  Medicine Kit       weight  12 utility  90 [perishable]
+  Drinking Water     weight  25 utility  80 
+  Blankets           weight  18 utility  45 
+  Baby Food          weight  10 utility  55 [perishable]
+  Insulin            weight   6 utility  70 [perishable]
+  First Aid Supplies weight  14 utility  85 
+  Torches            weight   8 utility  20 
+  Antibiotics        weight   7 utility  75 [perishable]
+  Total weight: 100, Total weighted utility: 520, Raw utility: 520
+
+===== PERISHABLE PRIORITY (UTILITY MULTIPLIER 2) =====
+Dynamic Programming optimal weighted utility: 825
+  Medicine Kit       weight  12 utility  90 [perishable]
+  Drinking Water     weight  25 utility  80 
+  Baby Food          weight  10 utility  55 [perishable]
+  Insulin            weight   6 utility  70 [perishable]
+  First Aid Supplies weight  14 utility  85 
+  Fresh Vegetables   weight  20 utility  40 [perishable]
+  Antibiotics        weight   7 utility  75 [perishable]
+  Total weight: 94, Total weighted utility: 825, Raw utility: 495
+Greedy weighted utility: 825
+
+===== MULTIPLE TRUCKS (3 TRUCKS, 100 KG EACH) =====
+Truck 1 weighted utility: 825
+  Medicine Kit       weight  12 utility  90 [perishable]
+  Drinking Water     weight  25 utility  80 
+  Baby Food          weight  10 utility  55 [perishable]
+  Insulin            weight   6 utility  70 [perishable]
+  First Aid Supplies weight  14 utility  85 
+  Fresh Vegetables   weight  20 utility  40 [perishable]
+  Antibiotics        weight   7 utility  75 [perishable]
+  Total weight: 94, Total weighted utility: 825, Raw utility: 495
+Truck 2 weighted utility: 195
+  Rice Bags          weight  30 utility  60 
+  Tents              weight  35 utility  65 
+  Canned Food        weight  22 utility  50 
+  Torches            weight   8 utility  20 
+  Total weight: 95, Total weighted utility: 195, Raw utility: 195
+Truck 3 weighted utility: 45
+  Blankets           weight  18 utility  45 
+  Total weight: 18, Total weighted utility: 45, Raw utility: 45
+Combined weighted utility of all trucks: 1065
+
+===== REAL-TIME DECISION: NEW ITEM ARRIVES =====
+New item: Oxygen Cylinders weight 28 utility 120 [perishable]
+Re-optimized weighted utility: 985
+  Medicine Kit       weight  12 utility  90 [perishable]
+  Baby Food          weight  10 utility  55 [perishable]
+  Insulin            weight   6 utility  70 [perishable]
+  First Aid Supplies weight  14 utility  85 
+  Fresh Vegetables   weight  20 utility  40 [perishable]
+  Antibiotics        weight   7 utility  75 [perishable]
+  Oxygen Cylinders   weight  28 utility 120 [perishable]
+  Total weight: 97, Total weighted utility: 985, Raw utility: 535
+
+===== PERFORMANCE ANALYSIS =====
+N      W          Method             Utility      Time(ms)  
+16     200        Brute Force        728          2.585     
+16     200        Dynamic Prog.      728          0.009     
+16     200        Greedy             720          0.002     
+20     200        Brute Force        750          45.819    
+20     200        Dynamic Prog.      750          0.021     
+20     200        Greedy             750          0.002     
+22     200        Brute Force        861          221.918   
+22     200        Dynamic Prog.      861          0.032     
+22     200        Greedy             827          0.002     
+200    20000      Dynamic Prog.      50194        8.507     
+200    20000      Greedy             50194        0.075     
+200    20000      Brute Force        infeasible   2^N       
+1000   20000      Dynamic Prog.      125511       40.368    
+1000   20000      Greedy             125488       1.907     
+1000   20000      Brute Force        infeasible   2^N       
+2000   20000      Dynamic Prog.      174049       62.222    
+2000   20000      Greedy             174036       8.736     
+2000   20000      Brute Force        infeasible   2^N       

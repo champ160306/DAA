@@ -1,0 +1,49 @@
+===== CITY NETWORK: INITIAL TRAFFIC =====
+H1(J5): 12 min | S -> J2 -> J3 -> J5
+H2(J9): 16 min | S -> J2 -> J3 -> J6 -> J8 -> J9
+H3(J11): 17 min | S -> J2 -> J3 -> J6 -> J10 -> J11
+Nearest hospital: H1(J5) (12 min)
+
+===== TRAFFIC UPDATE: J3-J6 congested (4 -> 25), J2-J3 (2 -> 12) =====
+H1(J5): 16 min | S -> J1 -> J3 -> J5
+H2(J9): 19 min | S -> J2 -> J4 -> J6 -> J8 -> J9
+H3(J11): 20 min | S -> J2 -> J4 -> J6 -> J10 -> J11
+Nearest hospital: H1(J5) (16 min)
+
+===== TRAFFIC UPDATE: J2-J3 cleared (12 -> 2), J6-J8 accident (5 -> 40) =====
+H1(J5): 12 min | S -> J2 -> J3 -> J5
+H2(J9): 17 min | S -> J2 -> J3 -> J5 -> J7 -> J9
+H3(J11): 20 min | S -> J2 -> J4 -> J6 -> J10 -> J11
+Nearest hospital: H1(J5) (12 min)
+
+===== GRID CITY 10 x 10: ROUTE VISUALIZATION =====
+Shortest time S to D: 56 min
+S . . . . . . . . . 
+* . . . . . . . . . 
+* . . . . . . . . . 
+* * * . . . . . . . 
+. . * * * . . . . . 
+. . . . * * . . . . 
+. . . . . * . . . . 
+. . . . . * . . . . 
+. . . . . * . . . . 
+. . . . . * * * * D 
+
+After heavy congestion on part of the route, new time: 66 min
+S . . . . . . . . . 
+* . . . . . . . . . 
+* . . . . . . . . . 
+* * . . . . . . . . 
+. * . . . . . . . . 
+. * . . . . . . . . 
+. * . . . . . . . . 
+. * * * * * * . . . 
+. . . . . . * * * * 
+. . . . . . . . . D 
+
+===== LARGE CITY: 150 x 150 GRID (22500 INTERSECTIONS) =====
+Intersections: 22500, Roads: 44700
+Initial shortest time to farthest corner: 806 min
+Initial computation time: 1.782 ms
+500 real-time weight updates with recomputation: 827.011 ms total
+Final shortest time to farthest corner: 820 min

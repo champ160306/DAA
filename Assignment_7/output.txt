@@ -1,0 +1,51 @@
+===== SMALL EXAMPLE: 10 COURSES, 16 CONFLICT PAIRS =====
+
+Greedy Coloring: 3 slots, valid: yes
+  Slot 1: C1 C5 C7 C9
+  Slot 2: C2 C4 C6 C8 C10
+  Slot 3: C3
+
+Welsh-Powell: 3 slots, valid: yes
+  Slot 1: C3 C5 C7 C9
+  Slot 2: C2 C4 C6 C8 C10
+  Slot 3: C1
+
+DSATUR: 3 slots, valid: yes
+  Slot 1: C3 C5 C7 C9
+  Slot 2: C2 C4 C6 C8 C10
+  Slot 3: C1
+
+Backtracking (optimal): 3 slots, valid: yes
+  Slot 1: C1 C5 C7 C9
+  Slot 2: C2 C4 C6 C8 C10
+  Slot 3: C3
+
+===== ROOM ALLOCATION: 10 COURSES, 4 ROOMS (CAPACITIES 220, 160, 120, 100) =====
+Room-constrained schedule uses 3 slots (conflict-free colouring used 3)
+  Slot 1: C3(150 students)->Room2(cap 160) C5(90 students)->Room4(cap 100) C7(40 students)->Room1(cap 220) C9(110 students)->Room3(cap 120)
+  Slot 2: C2(80 students)->Room4(cap 100) C4(60 students)->Room2(cap 160) C6(200 students)->Room1(cap 220) C8(70 students)->Room3(cap 120)
+  Slot 3: C1(120 students)->Room3(cap 120) C10(50 students)->Room4(cap 100)
+
+===== LARGE DATASET: 500 COURSES, 2500 STUDENTS, 14904 CONFLICT PAIRS =====
+Algorithm        Slots      Time(ms)   Valid   
+Greedy           24         0.464      yes     
+Welsh-Powell     20         0.603      yes     
+DSATUR           18         2.040      yes     
+Room allocation with 40 rooms:
+Room-constrained schedule uses 18 slots (conflict-free colouring used 18)
+
+===== LARGE DATASET: 1000 COURSES, 5000 STUDENTS, 30612 CONFLICT PAIRS =====
+Algorithm        Slots      Time(ms)   Valid   
+Greedy           24         1.142      yes     
+Welsh-Powell     21         1.629      yes     
+DSATUR           18         5.943      yes     
+Room allocation with 40 rooms:
+Room-constrained schedule uses 38 slots (conflict-free colouring used 18)
+
+===== LARGE DATASET: 2000 COURSES, 10000 STUDENTS, 61781 CONFLICT PAIRS =====
+Algorithm        Slots      Time(ms)   Valid   
+Greedy           25         3.072      yes     
+Welsh-Powell     20         4.503      yes     
+DSATUR           19         16.305     yes     
+Room allocation with 40 rooms:
+Room-constrained schedule uses 87 slots (conflict-free colouring used 19)
